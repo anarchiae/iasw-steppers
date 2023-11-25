@@ -44,13 +44,13 @@ void setup() {
 }
 
 void loop() {
-  if(stepperMode == 1) {
+  if(stepperMode == 1) { // The motor is set to turn clockwise
     Serial.println("CLOCKWISE");
-    myStepper.step(stepsPerRevolution);
-  } else if(stepperMode == 2) {
+    myStepper.step(stepsPerRevolution); 
+  } else if(stepperMode == 2) { // The motor is set to turn unclockwise
     Serial.println("COUNTERCLOCKWISE");
     myStepper.step(-stepsPerRevolution);
-  } else {
+  } else { // The motor is set to stop turning
     Serial.println("STOPPED");
   }
 
