@@ -50,8 +50,7 @@ void loop() {
   } else if(stepperMode == 2) { // The motor is set to turn unclockwise
     Serial.println("COUNTERCLOCKWISE");
     myStepper.step(-stepsPerRevolution);
-  } else { // The motor is set to stop turning
+  } else { // The motor is set to stop turning 
     Serial.println("STOPPED");
   }
-
 }
