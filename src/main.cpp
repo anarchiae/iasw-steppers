@@ -5,7 +5,7 @@
 int stepperMode; // Defines if the motor is active or inactive
 const int stepsPerRevolution = 2048; // Number of steps per rotations
 //Stepper myStepper = Stepper(stepsPerRevolution, 8, 9, 10, 11); // Stepper object
-Stepper myStepper = Stepper(stepsPerRevolution, 9, 10, 11, 8);
+Stepper myStepper = Stepper(stepsPerRevolution, 9, 10, 11, 7);
 
 void setup() {
   Serial.begin(9600);
